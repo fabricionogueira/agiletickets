@@ -10,7 +10,9 @@ public class SessaoTest {
 
 	@Before
 	public void inicializa() {
-		sessao = new Sessao();
+		sessao = new SessaoBuilder().comTotalIngressos(8)
+									.comIngressosReservados(6)
+									.constroi();
 	}
 	
 	@Test
