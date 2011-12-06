@@ -10,4 +10,6 @@ public class Sala {
 	@Id
 	@GeneratedValue
 	private Long id;
+	
+	private String descricao;
 }
