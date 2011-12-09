@@ -1,7 +1,6 @@
 package br.com.caelum.agiletickets.models;
 
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
 
 public class SessaoTest {
@@ -33,6 +32,7 @@ public class SessaoTest {
 	
 	@Test
 	public void deveVenderTodosIngressosDisponiveis() throws Exception {
+		
 		Sessao sessao = new SessaoBuilder().comTotalIngressos(2).constroi();
 		
 		Assert.assertTrue(sessao.podeReservar(2));
